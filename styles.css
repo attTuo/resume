@@ -1,0 +1,267 @@
+html, body{
+    background-color:#343a40;
+    height: 100%;
+    font-family:'Courier New', Courier, monospace;
+}
+*{
+    box-sizing:border-box;
+    margin:0px;
+}
+[class*="col-"]{
+    width:100%;
+    height:auto;
+    float:left;
+    padding:5px;
+    text-align:left;
+}
+
+/*Navigation*/
+.col-1{
+    width: 100%;
+    height: 60px;
+    clear: both;
+    font-size: 20px;
+    border-bottom: solid whitesmoke 1px;
+    margin-bottom: 20px;
+}
+.col-1 ul{
+    list-style:none;
+    margin:auto;
+    padding:0px;
+    padding-top: 10px;
+    text-align: center;
+}
+.col-1 li{
+    margin:7px;
+    padding: 0px;
+    width:13.541666666666666666666666666667%;
+    margin-left:1.04166666666667%;
+    margin-right:1.04166666666667%;
+    display: inline-block;
+}
+.col-1 a:link, a:visited{
+    display: block;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.col-1 a:hover, a:active{
+    color: #adb5bd;
+    transform: scale(107%);
+    transition:0.75s;
+    text-decoration: none;
+}
+
+
+/*About column*/
+img{
+    width:100%;
+    height:auto;
+    float:left;
+    padding:5px;
+    text-align:justify;
+}
+.col-2{
+    background-color:#495057;
+    color:white;
+    font-size:14px;
+    padding:15px;
+}
+#infoText{
+    float: left;
+    padding-inline: 20px;
+    text-align: left;
+}
+.aside-content{
+    float: left;
+    padding: 20px;
+    text-align: left;
+}
+h3{
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.mini-header{
+    font-size: 16px;
+}
+
+
+/*Information column*/
+.col-3{
+    padding: 0px;
+    background-color: #adb5bd;
+    margin-bottom: 20px;
+}
+#info-content{
+    padding: 15px;
+}
+#edu{
+    padding-bottom: 15px;
+    border-bottom: solid 1px black;
+}
+.small-header{
+    font-size: 18px;
+    margin-top: 10px;
+}
+#skills{
+    padding-bottom: 15px;
+    border-bottom: solid 1px black;
+}
+#myProjects{
+    padding-bottom: 15px;
+    border-bottom: solid 1px black;
+}
+ul{
+    margin-bottom: 10px;
+}
+#interests{
+    padding-bottom: 15px;
+    border-bottom: solid 1px black;
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+
+/*Projects page*/
+.col-2-projects{
+    background-color: #adb5bd;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+.project{
+    width: 100%;
+    clear: both;
+    overflow: auto;
+    margin-bottom: 10px;
+    background-color: #495057;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+.project h2{
+    font-size: 26px;
+}
+.img-container{
+    display: flex;
+    flex: 50%;
+    padding: 10px;
+    align-self: center;
+    justify-content: center;
+}
+.img-container img{
+    width: 75%;
+}
+.project-link{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 200px;
+    border: solid 1px whitesmoke;
+    margin-inline: auto;
+}
+.project-link:hover, .project-link:active{
+    color: #adb5bd;
+    transform: scale(107%);
+    transition:0.75s;
+    text-decoration: none;
+}
+.project-info{
+    padding: 10px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    flex: 50%;
+}
+.project-small-header{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.project-info-links{
+    display: flex;
+}
+
+
+/*Media queries*/
+@media only screen and (max-width: 600px){
+
+    .project-info-links{
+        display: contents;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:768px){
+
+    #myImg{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:768px){
+
+    body{
+        max-width:960px;
+        margin:auto;
+    }
+    .content{
+        background-color:#adb5bd;
+        width: 100%;
+        height:auto;
+        clear: both;
+    }
+    .col-1{
+        float: left;
+        width:100%;
+        clear: both;
+    }
+    .col-2{
+        width:30.20833333333334%;
+        height: 100%;
+        background-color: #495057;
+    } 
+    .col-3{
+        width:69.79166666666668%;
+        height: 100%;
+    }
+
+    .project {
+        flex-direction: row;
+        text-align: left;
+    }
+    .img-container{
+        flex: 50%;
+    }
+    .img-container img{
+        width: 100%;
+    }
+    .project-info{
+        flex: 50%;
+    }
+    .project-link{
+        margin-inline: 0px;
+    }
+    .project-info-links{
+        display: contents;
+    }
+}
+
+@media only screen and (min-width:992px){
+    
+    .project-info-links{
+        display: flex;
+    }
+    .project-info-links a{
+        margin-inline-end: auto;
+    }
+
+}
