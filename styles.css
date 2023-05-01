@@ -199,17 +199,17 @@ h2{
 
 
 /*Media queries*/
+@media only screen and (min-width:480px){
+
+    #myImg{
+        width: 40%;
+    }
+}
+
 @media only screen and (max-width: 600px){
 
     .project-info-links{
         display: contents;
-    }
-}
-
-@media only screen and (min-width:480px) and (max-width:768px){
-
-    #myImg{
-        width: 40%;
     }
 }
 
@@ -234,7 +234,10 @@ h2{
         width:30.20833333333334%;
         height: 100%;
         background-color: #495057;
-    } 
+    }
+    #myImg{
+        width: 100%;
+    }
     .col-3{
         width:69.79166666666668%;
         height: 100%;
