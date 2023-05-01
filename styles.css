@@ -15,7 +15,7 @@ html, body{
     text-align:left;
 }
 a, a:hover, a:focus, a:active {
-    color: inherit;
+    color: inherit !important;
 }
 
 /*Navigation*/
